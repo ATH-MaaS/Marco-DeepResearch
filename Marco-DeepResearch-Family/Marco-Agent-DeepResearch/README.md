@@ -1,11 +1,8 @@
 # Marco-DeepResearch
 
 <p align="center">
-  <a href="README_zh.md">🌐 中文</a> •
   <a href="https://arxiv.org/abs/2603.28376">📄 Paper</a> •
   <a href="https://huggingface.co/AIDC-AI/Marco-DeepResearch-8B">🤗 HuggingFace</a> •
-  <a href="MODEL_CARD.md">📋 Model Card (EN)</a> •
-  <a href="MODEL_CARD_zh.md">📋 模型卡 (中文)</a>
 </p>
 
 **Marco-DeepResearch** is an efficient 8B-scale deep research agent developed by **Alibaba International Digital Commerce (AIDC-AI)**. It autonomously conducts open-ended investigations by integrating complex information retrieval with multi-step reasoning across diverse web sources.
