@@ -15,7 +15,7 @@
 
 🍓 [_**Alibaba International Digital Commerce**_](https://aidc-ai.com) 🍓
 
-📝  [**HSCodeComp Paper**](https://arxiv.org/abs/2510.19631) | 📝  [**DeepWideSearch Paper**](https://arxiv.org/abs/2510.20168) | 🤗  [**HSCodeComp Dataset**](https://huggingface.co/datasets/AIDC-AI/HSCodeComp) | 🤗  [**DeepWideSearch Dataset**](https://huggingface.co/datasets/AIDC-AI/DeepWideSearch)
+📝  [**Marco DeepResearch Technical Report**](https://arxiv.org/abs/2603.28376) | 📝  [**HSCodeComp Paper**](https://arxiv.org/abs/2510.19631) | 📝  [**DeepWideSearch Paper**](https://arxiv.org/abs/2510.20168) | 🤗  [**HSCodeComp Dataset**](https://huggingface.co/datasets/AIDC-AI/HSCodeComp) | 🤗  [**DeepWideSearch Dataset**](https://huggingface.co/datasets/AIDC-AI/DeepWideSearch) | 🤗  [**Marco-DeepResearch-8B Model**](https://huggingface.co/AIDC-AI/Marco-DeepResearch-8B)
 
 [English](README.md) | [简体中文](README_zh.md)
 
