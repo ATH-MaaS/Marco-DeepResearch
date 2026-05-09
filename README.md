@@ -54,7 +54,7 @@ These benchmarks and frameworks reveal and address fundamental gaps in current A
 * **[2026-05]** 🎉 **UMEM (Unified Memory Extraction and Management)** has been accepted by ICML 2026
 * **[2026-04]** 🎉 Table-as-Search has been accepted by ACL 2026 Findings
 * **[2026-04]** 🎉 HSCodeComp has been accepted by ACL 2026 Main-Oral (10: Top 5% of accepted papers, seminal paper)
-* **[2026-03]** 🎉 Release **[Marco DeepResearch Technical Report](https://arxiv.org/pdf/2602.01331)**
+* **[2026-03]** 🎉 Release **[Marco DeepResearch Technical Report](https://arxiv.org/abs/2603.28376)**
 * **[2026-02]** 🎉 Released **UMEM (Unified Memory Extraction and Management)** - a self-evolving memory framework that jointly optimizes extraction and management for generalizable agent memory.
 * **[2026-02]** 🎉 Released **Table-as-Search** - a structured planning framework for long-horizon agentic informatin seeking.
 * **[2026-02]** 🏆 **DeepWideSearch**: **[A-MapReduce](https://arxiv.org/pdf/2602.01331)** uses DeepWideSearch as the primary benchmark for wide-search systems, achieving **79.09% Core Entity Accuracy**, **51.78% Column F1**, and **4.43% Success Rate** (SOTA among open-source frameworks), Setting new standards for evaluating agentic search capabilities with reproducible metrics
