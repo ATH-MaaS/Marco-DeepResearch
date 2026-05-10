@@ -237,6 +237,7 @@ The Marco DeepResearch initiative encompasses multiple benchmarks and frameworks
 - **🌐 [DeepWideSearch](Marco-DeepResearch-Family/DeepWideSearch/README.md)**: Deep-and-wide agentic information seeking
 - **📊 [Table-as-Search](Marco-DeepResearch-Family/Table-as-Search/README.md)**: Production-ready hierarchical multi-agent framework
 - **🧠 [UMEM](Marco-DeepResearch-Family/UMEM/README.md)**: Unified memory extraction and management for self-evolving agents
+- **📊 [Marco-Agent-DeepResearch](Marco-DeepResearch-Family/Marco-Agent-DeepResearch/README.md)**: An efficient 8B-scale deep research agent
 
 <div align="center">
   <a href="Marco-DeepResearch-Family/README.md">
