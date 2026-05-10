@@ -318,4 +318,14 @@ If you find our work useful, please consider citing:
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2602.10652}, 
 }
+
+@misc{zhu2026marcodeepresearchunlockingefficient,
+      title={Marco DeepResearch: Unlocking Efficient Deep Research Agents via Verification-Centric Design}, 
+      author={Bin Zhu and Qianghuai Jia and Tian Lan and Junyang Ren and Feng Gu and Feihu Jiang and Longyue Wang and Zhao Xu and Weihua Luo},
+      year={2026},
+      eprint={2603.28376},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2603.28376}, 
+}
 ```
