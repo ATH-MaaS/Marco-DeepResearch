@@ -50,7 +50,7 @@ These benchmarks and frameworks reveal and address fundamental gaps in current A
 
 ## 🔥 News & Updates
 
-* **[2026-05]** 🎉 Release **[Marco-DeepResearch-8B Model](https://huggingface.co/AIDC-AI/Marco-DeepResearch-8B)** and Marco-DeepResearch Agent
+* **[2026-05]** 🎉 Release **[Marco-DeepResearch-8B Model](https://huggingface.co/AIDC-AI/Marco-DeepResearch-8B)** and **[Marco-DeepResearch Agent](https://github.com/AIDC-AI/Marco-DeepResearch/blob/main/Marco-DeepResearch-Family/Marco-Agent-DeepResearch/README.md)**
 * **[2026-05]** 🎉 **UMEM (Unified Memory Extraction and Management)** has been accepted by ICML 2026
 * **[2026-04]** 🎉 Table-as-Search has been accepted by ACL 2026 Findings
 * **[2026-04]** 🎉 HSCodeComp has been accepted by ACL 2026 Main-Oral (10: Top 5% of accepted papers, seminal paper)
