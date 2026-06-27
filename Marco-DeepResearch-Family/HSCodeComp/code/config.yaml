@@ -1,0 +1,76 @@
+# ═══════════════════════════════════════════════════════════════
+# HSCodeComp Agent — 配置文件
+# ═══════════════════════════════════════════════════════════════
+# 支持多模型切换，环境变量优先于本文件配置
+
+# --- 模型配置预设 ---
+# 通过 --model 参数或 MODEL_PRESET 环境变量切换
+
+models:
+  qwen3.7-max:
+    model: "qwen3.7-max"
+    base_url: "$DASHSCOPE_BASE_URL"
+    api_key: "$DASHSCOPE_API_KEY"
+    enable_thinking: true
+    context_length: 131072
+
+  glm-5.2:
+    model: "glm-5.2"
+    base_url: "$DASHSCOPE_BASE_URL"
+    api_key: "$DASHSCOPE_API_KEY"
+    enable_thinking: false
+    context_length: 128000
+
+  deepseek-v4-pro:
+    model: "deepseek-v4-pro"
+    base_url: "$DASHSCOPE_BASE_URL"
+    api_key: "$DASHSCOPE_API_KEY"
+    enable_thinking: false
+    context_length: 131072
+
+  gpt-5.5:
+    model: "gpt-5.5"
+    base_url: "$OPENAI_BASE_URL"
+    api_key: "$OPENAI_API_KEY"
+    enable_thinking: false
+    context_length: 128000
+
+  claude-opus-4-8:
+    model: "claude-opus-4-8"
+    base_url: "$ANTHROPIC_BASE_URL"
+    api_key: "$ANTHROPIC_API_KEY"
+    enable_thinking: false
+    context_length: 200000
+
+# --- 默认模型 ---
+default_model: "qwen3.7-max"
+
+# --- Agent 行为配置 ---
+agent:
+  max_iterations: 40          # 单次对话最大工具调用轮数
+  tool_delay: 0.1             # 工具调用间隔（秒）
+  enabled_toolsets:           # 启用的工具集（hermes-agent toolsets）
+    - web                       # "web" toolset = web_search + web_extract
+    - hts                       # "hts" toolset = 本地 HTS 树查询工具
+  gri_rules: true             # 默认注入 GRI 六条归类总规则
+  verbose: false
+  # Reasoning / thinking 配置
+  reasoning:
+    enabled: true
+    effort: high              # HSCode 分类需要深度推理
+
+# --- 批量测试配置 ---
+batch:
+  parallel: 4                 # 并发数
+  max_retries: 3              # 单题最大重试次数
+  retry_delay: 2              # 重试间隔（秒）
+
+# --- 日志配置 ---
+logging:
+  level: "INFO"
+  dir: "./logs"
+  console_rich: true
+
+# --- 数据路径 ---
+data:
+  test_data: "./data/test_data.jsonl"

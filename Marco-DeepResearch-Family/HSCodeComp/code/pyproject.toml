@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hscode-comp"
+version = "0.1.0"
+description = "HSCodeComp — Agent-based HS Code Classification Benchmark Reproduction"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "HSCodeComp Team" }]
+license = { text = "Apache-2.0" }
+dependencies = [
+    "hermes-agent>=0.14.0",
+    "httpx>=0.28.0",
+    "pyyaml>=6.0",
+    "rich>=13.0",
+    "python-dotenv>=1.0.0",
+    "openai>=1.30.0",
+]
+
+[project.optional-dependencies]
+anthropic = ["anthropic>=0.80.0"]
+
+[project.scripts]
+hscode-run = "run:main"
+hscode-batch = "batch_test:main"
+hscode-eval = "eval:main"
+
+[tool.setuptools]
+py-modules = ["run", "batch_test", "batch_reflect", "eval", "eval_reflect", "agent_factory", "_resources", "custom_hts_tools", "analyze_cross_usage"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"*" = [
+    "config.yaml",
+    "prompts/*.md",
+    "data/*.json",
+]

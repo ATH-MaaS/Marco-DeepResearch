@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Environment
+.env
+.venv/
+env/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Output (generated at runtime)
+output/*.jsonl
+output/*.json
+output_reflect/
+logs/*.log
+
+# OS
+.DS_Store
+Thumbs.db
