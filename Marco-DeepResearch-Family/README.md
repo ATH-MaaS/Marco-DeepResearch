@@ -2,7 +2,7 @@
 
 <div align="center">
 
-🍓 [_**Alibaba International Digital Commerce**_](https://aidc-ai.com) 🍓
+🍓 [_**Alibaba Group**_](https://www.qianwenai.com/) 🍓
 
 [English](README.md) | [简体中文](README_zh.md)
 
@@ -230,7 +230,7 @@ Our family of benchmarks and frameworks identifies and addresses key challenges:
 
 ## 👨🏻‍💻 Contact
 
-Main contributors are from AI Business, Alibaba International Digital Commerce. For questions or collaboration:
+Main contributors are from Alibaba Group（ATH-MaaS）. For questions or collaboration:
 - [Tian Lan](https://github.com/gmftbyGMFTBY)
 - [Longyue Wang](https://www.longyuewang.com/)
 
