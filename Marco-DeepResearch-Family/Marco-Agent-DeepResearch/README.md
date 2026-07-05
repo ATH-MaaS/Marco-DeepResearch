@@ -5,7 +5,7 @@
   <a href="https://huggingface.co/AIDC-AI/Marco-DeepResearch-8B">🤗 HuggingFace</a> •
 </p>
 
-**Marco-DeepResearch** is an efficient 8B-scale deep research agent developed by **Alibaba International Digital Commerce (AIDC-AI)**. It autonomously conducts open-ended investigations by integrating complex information retrieval with multi-step reasoning across diverse web sources.
+**Marco-DeepResearch** is an efficient 8B-scale deep research agent developed by **Alibaba Group (ATH-MaaS)**. It autonomously conducts open-ended investigations by integrating complex information retrieval with multi-step reasoning across diverse web sources.
 
 Marco-DeepResearch is optimized through a **verification-centric framework** at three levels:
 
