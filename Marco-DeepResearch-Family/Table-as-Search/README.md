@@ -8,9 +8,9 @@
 
 ⭐ _**MarcoPolo Team**_ ⭐
 
-[_**Alibaba International Digital Commerce**_](https://aidc-ai.com)
+[_**Alibaba Group**_](https://www.qianwenai.com/)
 
-📝 [**Paper**](https://arxiv.org/abs/PLACEHOLDER) | 🤗 [**Dataset**](https://huggingface.co/datasets/AIDC-AI/DeepWideSearch) | 🔧 [**Framework**](https://github.com/AIDC-AI/Marco-DeepWideSearch-Agent/Table-as-Search) | 🇨🇳 [**中文文档**](./README_CN.md)
+📝 [**Paper**](https://arxiv.org/abs/PLACEHOLDER) | 🤗 [**Dataset**](https://huggingface.co/datasets/AIDC-AI/DeepWideSearch) | 🔧 [**Framework**](https://github.com/AIDC-AI/Marco-DeepWideSearch-Agent/Table-as-Search)
 
 </div>
 
