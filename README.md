@@ -13,7 +13,7 @@
 
 <div align="center">
 
-🍓 [_**Alibaba International Digital Commerce**_](https://aidc-ai.com) 🍓
+🍓 [_**Alibaba Group**_](https://aidc-ai.com) 🍓
 
 📝  [**Marco DeepResearch Technical Report**](https://arxiv.org/abs/2603.28376) | 📝  [**HSCodeComp Paper**](https://arxiv.org/abs/2510.19631) | 📝  [**DeepWideSearch Paper**](https://arxiv.org/abs/2510.20168) | 🤗  [**HSCodeComp Dataset**](https://huggingface.co/datasets/AIDC-AI/HSCodeComp) | 🤗  [**DeepWideSearch Dataset**](https://huggingface.co/datasets/AIDC-AI/DeepWideSearch) | 🤗  [**Marco-DeepResearch-8B Model**](https://huggingface.co/AIDC-AI/Marco-DeepResearch-8B)
 
@@ -25,7 +25,7 @@
 
 ## Introduction
 
-**Marco DeepResearch** is a comprehensive initiative from Alibaba International Digital Commerce that advances real-world AI agent capabilities through challenging benchmarks and practical applications. Our work bridges the gap between AI agents and human experts by exposing and addressing critical limitations in domain-specific reasoning, hierarchical rule application, and large-scale information seeking.
+**Marco DeepResearch** is a comprehensive initiative from Alibaba that advances real-world AI agent capabilities through challenging benchmarks and practical applications. Our work bridges the gap between AI agents and human experts by exposing and addressing critical limitations in domain-specific reasoning, hierarchical rule application, and large-scale information seeking.
 
 <div align="center">
   <img src="assets/Timeline_2.png" alt="Marco DeepResearch Roadmap" width="800">
@@ -64,7 +64,7 @@ These benchmarks and frameworks reveal and address fundamental gaps in current A
 
 ## 🌟 Marco DeepResearch in Practice
 
-Real-world deployment showcases how our research frameworks address critical challenges in Alibaba International Digital Commerce Group's business scenarios.
+Real-world deployment showcases how our research frameworks address critical challenges in Alibaba Group's business scenarios.
 
 ---
 
@@ -249,7 +249,7 @@ The Marco DeepResearch initiative encompasses multiple benchmarks and frameworks
 
 ## 👨🏻‍💻 Acknowledgements
 
-Main contributors are from AI Business, Alibaba International Digital Commerce. For questions or collaboration, please contact:
+Main contributors are from Alibaba. For questions or collaboration, please contact:
 - [Tian Lan](https://github.com/gmftbyGMFTBY)
 - [Longyue Wang](https://www.longyuewang.com/)
 
