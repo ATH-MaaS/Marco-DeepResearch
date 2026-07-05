@@ -9,7 +9,7 @@
 
 ⭐ _**MarcoPolo Team**_ ⭐
 
-[_**Alibaba International Digital Commerce**_](https://aidc-ai.com)
+[_**Alibaba Group**_](https://www.qianwenai.com/)
 
 <img src="https://octodex.github.com/images/original.png" alt="GitHub Octocat" width="22" height="22"> [**Github**](https://github.com/AIDC-AI/Marco-DeepWideSearch-Agent/HSCodeComp) 🤗  [**Hugging Face**](https://huggingface.co/datasets/AIDC-AI/HSCodeComp) 📝  [**Paper**](http://arxiv.org/abs/2510.19631) 🗂️  [**Data**](https://github.com/AIDC-AI/Marco-DeepWideSearch-Agent/HSCodeComp/data/test_data.jsonl)
 
