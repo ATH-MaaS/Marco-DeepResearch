@@ -132,8 +132,8 @@ Besides, we also evaluate our UMEM on other reasoning benchmarks (below figure).
 
 | Benchmark | HuggingFace | GitHub | Paper |
 |-----------|-------------|--------|-------|
-| **HSCodeComp** | [🤗 AIDC-AI/HSCodeComp](https://huggingface.co/datasets/AIDC-AI/HSCodeComp) | [📁 HSCodeComp/data](Marco-DeepResearch-Family/HSCodeComp/data/test_data.jsonl) | [📝 arXiv](https://arxiv.org/abs/2510.19631) |
-| **DeepWideSearch** | [🤗 AIDC-AI/DeepWideSearch](https://huggingface.co/datasets/AIDC-AI/DeepWideSearch) | [📁 DeepWideSearch/data](Marco-DeepResearch-Family/DeepWideSearch/data/) | [📝 arXiv](https://arxiv.org/abs/2510.20168) |
+| **HSCodeComp** | [🤗 ATH-MaaS/HSCodeComp](https://huggingface.co/datasets/AIDC-AI/HSCodeComp) | [📁 HSCodeComp/data](Marco-DeepResearch-Family/HSCodeComp/data/test_data.jsonl) | [📝 arXiv](https://arxiv.org/abs/2510.19631) |
+| **DeepWideSearch** | [🤗 ATH-MaaS/DeepWideSearch](https://huggingface.co/datasets/AIDC-AI/DeepWideSearch) | [📁 DeepWideSearch/data](Marco-DeepResearch-Family/DeepWideSearch/data/) | [📝 arXiv](https://arxiv.org/abs/2510.20168) |
 | **Table-as-Search** | [🤗 Table-as-Search Paper](https://huggingface.co/papers/2602.06724) | [📁 Table-as-Search Codebase](Marco-DeepResearch-Family/Table-as-Search/) | [📝 arXiv](https://arxiv.org/abs/2602.06724) |
 | **UMEM** | [🤗 UMEM Paper](https://huggingface.co/papers/2602.06724) | [📁 UMEM Codebase](Marco-DeepResearch-Family/UMEM/) | [📝 arXiv](https://arxiv.org/abs/2602.10652) |
 
