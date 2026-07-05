@@ -6,7 +6,7 @@
 
 ⭐ _**MarcoPolo Team**_ ⭐
 
-[_**Alibaba International Digital Commerce**_](https://aidc-ai.com)
+[_**Alibaba Group**_](https://www.qianwenai.com/)
 
 <img src="https://octodex.github.com/images/original.png" alt="GitHub Octocat" width="22" height="22">[**GitHub**](https://github.com/AIDC-AI/Marco-DeepResearch/tree/main/UMEM)  🤗  [**Models**](<HF_MODEL_URL>)  📝  [**Paper**](<PAPER_URL_OR_ARXIV_URL>)
 
