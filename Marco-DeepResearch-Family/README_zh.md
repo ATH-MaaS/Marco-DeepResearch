@@ -2,7 +2,7 @@
 
 <div align="center">
 
-🍓 [_**阿里巴巴国际数字商业**_](https://aidc-ai.com) 🍓
+🍓 [_**阿里巴巴集团**_](https://www.qianwenai.com/) 🍓
 
 [English](README.md) | [简体中文](README_zh.md)
 
@@ -230,7 +230,7 @@
 
 ## 👨🏻‍💻 联系方式
 
-主要贡献者来自阿里巴巴国际数字商业 AI 业务部门。如有问题或合作意向，请联系：
+主要贡献者来自阿里巴巴集团 AI团队（ATH-MaaS）。如有问题或合作意向，请联系：
 - [Tian Lan](https://github.com/gmftbyGMFTBY)
 - [Longyue Wang](https://www.longyuewang.com/)
 
