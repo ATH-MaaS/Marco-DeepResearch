@@ -318,6 +318,141 @@ Returns:
         output.append(f"      摘要: {result.get('snippet', 'N/A')}")
 
 
+class TavilySearchTool(Tool):
+    """
+    Tavily 搜索工具，作为 GoogleSearchTool 的可选替代方案。
+
+    使用 Tavily Search API 进行搜索，保持与 GoogleSearchTool 相同的接口。
+    """
+
+    name = "google_search"
+    description = """
+使用 Google Custom Search API 进行网络搜索。
+这是一个稳定可靠的搜索工具，基于 AI-HUB 定制化搜索引擎。
+
+Args:
+    query: 要搜索的查询文本
+
+Returns:
+    搜索结果，包含标题、URL 和摘要
+
+注意由于 Google Custom Search 的要求，请慎重使用同时带有多个引号的精确查询 query，因为 Google Search API 要求它们同时精确匹配，通常可能会导致无结果或者搜索失败。
+"""
+    inputs = {
+        "query": {
+            "type": "string",
+            "description": "要搜索的查询文本"
+        }
+    }
+    output_type = "string"
+
+    def __init__(
+        self,
+        api_key: Optional[str] = None,
+        limit: int = 10,
+        max_retries: int = 3,
+        global_search_counter: Optional["GlobalSearchCounter"] = None
+    ):
+        """
+        初始化 Tavily 搜索工具
+
+        Args:
+            api_key: Tavily API 密钥，如果为 None 则从环境变量 TAVILY_API_KEY 读取
+            limit: 返回的搜索结果数量（默认10）
+            max_retries: 搜索失败时的最大重试次数（默认3）
+            global_search_counter: 全局搜索计数器，用于在多个 agent 之间共享搜索限制
+        """
+        super().__init__()
+
+        self.api_key = api_key or os.environ.get("TAVILY_API_KEY")
+        self.limit = limit
+        self.max_retries = max_retries
+        self.global_search_counter = global_search_counter
+
+        from tavily import TavilyClient
+        self._client = TavilyClient(api_key=self.api_key)
+
+    def forward(self, query: str) -> str:
+        """
+        执行搜索并返回格式化的结果
+
+        Args:
+            query: 搜索查询
+
+        Returns:
+            格式化的搜索结果字符串
+        """
+        # 检查全局搜索限制
+        search_counter_info = None
+        if self.global_search_counter is not None:
+            if not self.global_search_counter.try_increment():
+                remaining = self.global_search_counter.get_remaining()
+                current = self.global_search_counter.get_count()
+                limit = self.global_search_counter.limit
+                return (
+                    f"Error: Global search limit reached. "
+                    f"[Current: {current}/{limit}, Remaining: {remaining}] "
+                    f"You have exhausted the maximum number of searches allowed for this task. "
+                    f"IMPORTANT: You MUST immediately write all the information you have collected so far into the table using the `add_records` or `update_records` tool. "
+                    f"Do NOT attempt to perform any more searches. "
+                    f"First, consolidate and record your findings in the table using the `add_records` or `update_records` tool, then proceed to complete your task based on the information already gathered."
+                )
+            else:
+                remaining = self.global_search_counter.get_remaining()
+                current = self.global_search_counter.get_count()
+                limit = self.global_search_counter.limit
+                search_counter_info = f"[Current Google Search Budget: {current}/{limit}, Remaining Google Search Budget: {remaining}]"
+
+        # 尝试 Tavily Search，最多重试 max_retries 次
+        last_error = None
+        for attempt in range(1, self.max_retries + 1):
+            try:
+                response = self._client.search(
+                    query=query,
+                    max_results=self.limit,
+                    search_depth="basic",
+                )
+
+                tavily_results = response.get("results", [])
+
+                if tavily_results:
+                    results = []
+                    for item in tavily_results[:self.limit]:
+                        results.append({
+                            'title': item.get('title', 'No title'),
+                            'url': item.get('url', 'No URL'),
+                            'snippet': item.get('content', 'No description')
+                        })
+
+                    formatted_result = "=" * 80 + '\n'.join([self._format_result(result, index) for index, result in enumerate(results)]) + '\n' + "=" * 80
+                    if search_counter_info:
+                        formatted_result += f"\n\n_{search_counter_info}_"
+                    return formatted_result
+                else:
+                    last_error = "Tavily Search returned no results. You MUST refine your search query and strategy and try again."
+                    if attempt == self.max_retries:
+                        break
+                    continue
+
+            except Exception as e:
+                last_error = f"Tavily Search exception: {str(e)}"
+                if attempt == self.max_retries:
+                    break
+                continue
+
+        raise Exception(
+            f"Tavily Search Failed or Return No Results. You MUST refine your search query and strategy and try again."
+        )
+
+    def _format_result(self, result: Dict[str, Any], index: int) -> str:
+        """格式化单条搜索结果"""
+        output = []
+        output.append(f"\n  [{index}] {result.get('title', 'N/A')}")
+        output.append(f"      链接: {result.get('url', 'N/A')}")
+        output.append(f"      摘要: {result.get('snippet', 'N/A')}")
+        return "\n".join(output)
+
+
 def run_test_suite():
     """运行完整的测试套件"""
     

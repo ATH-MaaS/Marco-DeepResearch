@@ -4,6 +4,7 @@ anthropic>=0.37.1
 
 # 工具依赖
 requests>=2.32.3
+tavily-python>=0.5.0
 beautifulsoup4>=4.12.3
 markdownify>=0.13.1
 pymongo>=4.0.0

@@ -48,7 +48,7 @@ sys.path.insert(0, str(tools_path))
 prompts_path = Path(__file__).parent / "prompts"
 sys.path.insert(0, str(prompts_path))
 
-from google_search_tool import GoogleSearchTool, GlobalSearchCounter
+from google_search_tool import GoogleSearchTool, GlobalSearchCounter, TavilySearchTool
 from jina_visit import JinaBackedVisitWebpageTool, JinaBackedVisitWebpageSummaryTool, GlobalVisitCounter
 from db_table_code_v2 import DBTableCodeToolInterface, GlobalCreateTableCounter
 from context_summary_toolcalling_agent import create_context_summarization_agent_class, SummaryStep
@@ -513,7 +513,13 @@ def create_agent_team(
     
     # 创建搜索工具的辅助函数
     def create_search_tool():
-        """创建搜索工具实例"""
+        """创建搜索工具实例，根据 SEARCH_PROVIDER 环境变量选择搜索引擎"""
+        provider = os.environ.get("SEARCH_PROVIDER", "google").lower()
+        if provider == "tavily":
+            return TavilySearchTool(
+                limit=10,
+                global_search_counter=global_search_counter
+            )
         return GoogleSearchTool(
             limit=10,
             global_search_counter=global_search_counter  # 传入共享的全局计数器
