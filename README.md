@@ -28,7 +28,7 @@
 **Marco DeepResearch** is a comprehensive initiative from Alibaba that advances real-world AI agent capabilities through challenging benchmarks and practical applications. Our work bridges the gap between AI agents and human experts by exposing and addressing critical limitations in domain-specific reasoning, hierarchical rule application, and large-scale information seeking.
 
 <div align="center">
-  <img src="assets/Timeline_2.png" alt="Marco DeepResearch Roadmap" width="800">
+  <img src="assets/marco_deepresearch.png" alt="Marco DeepResearch Roadmap" width="800">
 </div>
 
 ### 🎯 Key Achievements
