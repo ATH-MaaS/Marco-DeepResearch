@@ -28,7 +28,7 @@
 **Marco DeepResearch** 是阿里巴巴集团推出的综合性研究计划，通过具有挑战性的基准测试和实际应用推动真实世界的 AI 智能体能力发展。我们的工作致力于缩小 AI 智能体与人类专家之间的差距，揭示并解决领域特定推理、层级规则应用和大规模信息检索中的关键局限。
 
 <div align="center">
-  <img src="assets/Timeline_2.png" alt="Marco DeepResearch 发展路线图" width="800">
+  <img src="assets/marco_deepresearch.png" alt="Marco DeepResearch 发展路线图" width="800">
 </div>
 
 ### 🎯 核心成果
