@@ -51,6 +51,7 @@ These benchmarks and frameworks reveal and address fundamental gaps in current A
 
 ## 🔥 News & Updates
 
+* **[2026-09]** 🎉 Released **CHIME (Credit-Aware Hierarchical Memory Evolution)** - a self-evolving memory framework that maintains a separate planning bank and execution bank and follows an attribute-before-memorize principle.
 * **[2026-08]** 🎉 Open-sourced the **[UMEM](Marco-DeepResearch-Family/UMEM/README.md)** training and inference codebase
 * **[2026-08]** 🎉 Release **[Search2Skill](Marco-DeepResearch-Family/Search2Skill/README.md)** paper preview — a search-driven, self-evolving skill framework trained with rubric-based RL
 * **[2026-05]** 🎉 Release **[Marco-DeepResearch-8B Model](https://huggingface.co/AIDC-AI/Marco-DeepResearch-8B)** and **[Marco-DeepResearch Agent](https://github.com/AIDC-AI/Marco-DeepResearch/blob/main/Marco-DeepResearch-Family/Marco-Agent-DeepResearch/README.md)**
@@ -336,6 +337,16 @@ If you find our work useful, please consider citing:
       archivePrefix={arXiv},
       primaryClass={cs.AI},
       url={https://arxiv.org/abs/2608.05245}, 
+}
+
+@misc{ye2026chimecreditawarehierarchicalmemory,
+      title={CHIME: Credit-Aware Hierarchical Memory Evolution for Long-Horizon Agentic Planning}, 
+      author={Yongshi Ye and Tian Lan and Feihu Jiang and Muyang Ye and Bin Zhu and Qianghuai Jia and Longyue Wang and Zhao Xu and Weihua Luo and Xiaodong Shi},
+      year={2026},
+      eprint={2609.02074},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2609.02074}, 
 }
 
 @misc{zhu2026marcodeepresearchunlockingefficient,
