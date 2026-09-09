@@ -51,7 +51,7 @@ These benchmarks and frameworks reveal and address fundamental gaps in current A
 
 ## 🔥 News & Updates
 
-* **[2026-09]** 🎉 Released **[CHIME] (https://arxiv.org/abs/2609.02074)** - a self-evolving memory framework that maintains a separate planning bank and execution bank and follows an attribute-before-memorize principle.
+* **[2026-09]** 🎉 Released **[CHIME](https://arxiv.org/abs/2609.02074)** - a self-evolving memory framework that maintains a separate planning bank and execution bank and follows an attribute-before-memorize principle.
 * **[2026-08]** 🎉 Open-sourced the **[UMEM](Marco-DeepResearch-Family/UMEM/README.md)** training and inference codebase
 * **[2026-08]** 🎉 Release **[Search2Skill](Marco-DeepResearch-Family/Search2Skill/README.md)** paper preview — a search-driven, self-evolving skill framework trained with rubric-based RL
 * **[2026-05]** 🎉 Release **[Marco-DeepResearch-8B Model](https://huggingface.co/AIDC-AI/Marco-DeepResearch-8B)** and **[Marco-DeepResearch Agent](https://github.com/AIDC-AI/Marco-DeepResearch/blob/main/Marco-DeepResearch-Family/Marco-Agent-DeepResearch/README.md)**
@@ -61,7 +61,7 @@ These benchmarks and frameworks reveal and address fundamental gaps in current A
 * **[2026-03]** 🎉 Release **[Marco DeepResearch Technical Report](https://arxiv.org/abs/2603.28376)**
 * **[2026-02]** 🎉 Released **UMEM (Unified Memory Extraction and Management)** - a self-evolving memory framework that jointly optimizes extraction and management for generalizable agent memory.
 * **[2026-02]** 🎉 Released **Table-as-Search** - a structured planning framework for long-horizon agentic informatin seeking.
-* **[2026-02]** 🏆 **DeepWideSearch**: **[A-MapReduce]** uses DeepWideSearch as the primary benchmark for wide-search systems, achieving **79.09% Core Entity Accuracy**, **51.78% Column F1**, and **4.43% Success Rate** (SOTA among open-source frameworks), Setting new standards for evaluating agentic search capabilities with reproducible metrics
+* **[2026-02]** 🏆 **DeepWideSearch**: **A-MapReduce** uses DeepWideSearch as the primary benchmark for wide-search systems, achieving **79.09% Core Entity Accuracy**, **51.78% Column F1**, and **4.43% Success Rate** (SOTA among open-source frameworks), Setting new standards for evaluating agentic search capabilities with reproducible metrics
 * **[2025-10]** 🔥 Initial release of Marco DeepResearch with **DeepWideSearch** and **HSCodeComp** benchmarks.
 
 ---
