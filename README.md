@@ -54,10 +54,11 @@ These benchmarks and frameworks reveal and address fundamental gaps in current A
 * **[2026-09]** 🎉 Released **[CHIME](https://arxiv.org/abs/2609.02074)** - a self-evolving memory framework that maintains a separate planning bank and execution bank and follows an attribute-before-memorize principle.
 * **[2026-08]** 🎉 Open-sourced the **[UMEM](Marco-DeepResearch-Family/UMEM/README.md)** training and inference codebase
 * **[2026-08]** 🎉 Release **[Search2Skill](Marco-DeepResearch-Family/Search2Skill/README.md)** paper preview — a search-driven, self-evolving skill framework trained with rubric-based RL
+* **[2026-07]** 🔥 **HSCodeComp** has won the ACL 2026 **Best Resource Paper** Award
 * **[2026-05]** 🎉 Release **[Marco-DeepResearch-8B Model](https://huggingface.co/AIDC-AI/Marco-DeepResearch-8B)** and **[Marco-DeepResearch Agent](https://github.com/AIDC-AI/Marco-DeepResearch/blob/main/Marco-DeepResearch-Family/Marco-Agent-DeepResearch/README.md)**
 * **[2026-05]** 🎉 **UMEM (Unified Memory Extraction and Management)** has been accepted by ICML 2026
-* **[2026-04]** 🎉 Table-as-Search has been accepted by ACL 2026 Findings
-* **[2026-04]** 🎉 HSCodeComp has been accepted by ACL 2026 Main-Oral (10: Top 5% of accepted papers, seminal paper)
+* **[2026-04]** 🎉 **Table-as-Search** has been accepted by ACL 2026 Findings
+* **[2026-04]** 🎉 **HSCodeComp** has been accepted by ACL 2026 Main-Oral (10: Top 5% of accepted papers, seminal paper)
 * **[2026-03]** 🎉 Release **[Marco DeepResearch Technical Report](https://arxiv.org/abs/2603.28376)**
 * **[2026-02]** 🎉 Released **UMEM (Unified Memory Extraction and Management)** - a self-evolving memory framework that jointly optimizes extraction and management for generalizable agent memory.
 * **[2026-02]** 🎉 Released **Table-as-Search** - a structured planning framework for long-horizon agentic informatin seeking.
