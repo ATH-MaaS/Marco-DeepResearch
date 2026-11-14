@@ -1,0 +1,61 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ========================
+# Virtual environments
+# ========================
+.venv/
+venv/
+env/
+
+# ========================
+# IDE
+# ========================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ========================
+# macOS
+# ========================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ========================
+# Project-specific
+# ========================
+# Evaluation results (usually large)
+results/
+
+# Cached search results
+.cache/
+
+# Skill library (generated at runtime)
+skills/
+
+# HuggingFace dataset cache
+data/huggingface/
+
+# Logs
+*.log
+nohup.out
+
+# Environment / secrets
+.env
+.env.local
+
+# Datasets stay local and are not part of the code release.
+/data/
+/verl/data/

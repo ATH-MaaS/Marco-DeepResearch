@@ -16,7 +16,7 @@
 
 ---
 
-## 📑 [HSCodeComp](../HSCodeComp/README.md)
+## 📑 [HSCodeComp](HSCodeComp/README.md)
 
 **评估电商领域的层级规则应用**
 
@@ -46,7 +46,7 @@
 
 ---
 
-## 🌐 [DeepWideSearch](../DeepWideSearch/README.md)
+## 🌐 [DeepWideSearch](DeepWideSearch/README.md)
 
 **评估深度与广度结合的智能体信息检索**
 
@@ -77,7 +77,7 @@
 
 ---
 
-## 📊 [Table-as-Search](../Table-as-Search/README.md)
+## 📊 [Table-as-Search](Table-as-Search/README.md)
 
 **深度与广度结合的层级多智能体框架**
 
@@ -131,7 +131,7 @@
 
 ---
 
-## 🧠 [UMEM](../UMEM/README.md)
+## 🧠 [UMEM](UMEM/README.md)
 
 **统一记忆提取与管理：面向泛化的自进化记忆系统**
 
@@ -182,7 +182,7 @@
 
 ---
 
-## 🧬 [Search2Skill](../Search2Skill/README.md)
+## 🧬 [Search2Skill](Search2Skill/README.md)
 
 **基于 Rubric 强化学习的超越知识边界的技能蒸馏**
 
@@ -212,7 +212,7 @@
 
 ### 资源
 
-- 📝 [论文（预印本 PDF）](../assets/Search2Skill-20260804-v1-arxiv.pdf) | 🔧 代码（即将发布）| 📘 [文档](Search2Skill/README.md)
+- 📝 [论文](https://arxiv.org/abs/2608.05245) | 🔧 [代码](Search2Skill/) | 📘 [使用指南](Search2Skill/USAGE.md)
 
 ---
 
@@ -226,7 +226,7 @@
 | **DeepWideSearch** | [🤗 数据集](https://huggingface.co/datasets/AIDC-AI/DeepWideSearch) | [📁 数据](DeepWideSearch/data/) | [📝 arXiv](https://arxiv.org/abs/2510.20168) |
 | **Table-as-Search** | — | [📁 代码](Table-as-Search/) | [📝 arXiv](https://arxiv.org/abs/2602.06724) |
 | **UMEM** | 即将发布 | [📁 代码](UMEM/) | 即将发布 |
-| **Search2Skill** | — | [📁 代码（即将发布）](Search2Skill/) | [📝 预印本 PDF](../assets/Search2Skill-20260804-v1-arxiv.pdf) |
+| **Search2Skill** | — | [📁 代码](Search2Skill/) | [📝 arXiv](https://arxiv.org/abs/2608.05245) |
 
 ### 基准测试采用情况
 

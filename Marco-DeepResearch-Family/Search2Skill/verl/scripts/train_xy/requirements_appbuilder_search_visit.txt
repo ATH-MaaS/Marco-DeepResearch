@@ -1,0 +1,17 @@
+markdownify
+PyPDF2
+requests
+openai
+pytest-asyncio
+tenacity
+weave
+rapidfuzz>=3.0
+json-repair
+brotli
+# Chemistry libraries for code execution
+selfies
+# rdkit-pypi  # commented out: not available for current Python version
+openbabel-wheel
+pubchempy
+sympy
+openpyxl

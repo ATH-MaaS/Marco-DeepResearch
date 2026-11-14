@@ -1,0 +1,32 @@
+hydra:
+  searchpath:
+    - file://verl/trainer/config
+
+defaults:
+  - ppo_trainer
+  - _self_
+
+data:
+  max_prompt_length: 4096
+  max_response_length: 32768
+  train_batch_size: 32
+  return_raw_chat: True
+
+reward_model:
+  enable: False
+  use_reward_loop: False
+  reward_manager: batch
+
+actor_rollout_ref:
+  hybrid_engine: True
+  nccl_timeout: 3600
+  rollout:
+    name: sglang
+    mode: async
+    multi_turn:
+      enable: True
+      max_assistant_turns: 12
+      max_tool_response_length: 32768
+      tool_response_truncate_side: right
+    agent:
+      default_agent_loop: exskill_agent

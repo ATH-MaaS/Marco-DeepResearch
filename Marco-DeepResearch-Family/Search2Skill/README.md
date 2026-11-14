@@ -2,20 +2,13 @@
 
 <div align="center">
 
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](../../LICENSE) [![Paper](https://img.shields.io/badge/Paper-arXiv%20Preview-red.svg)](../../assets/Search2Skill-20260804-v1-arxiv.pdf) [![Code](https://img.shields.io/badge/Code-Coming%20Soon-lightgrey.svg)]()
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE) [![Paper](https://img.shields.io/badge/Paper-arXiv-red.svg)](https://arxiv.org/abs/2608.05245) [![Code](https://img.shields.io/badge/Code-Released-brightgreen.svg)](#-code)
 
 ⭐ _**MarcoPolo Team**_ ⭐
 
 [_**Alibaba Group**_](https://www.qianwenai.com/)
 
-<img src="https://octodex.github.com/images/original.png" alt="GitHub Octocat" width="22" height="22"> [**GitHub**](https://github.com/AIDC-AI/Marco-DeepResearch/tree/main/Marco-DeepResearch-Family/Search2Skill) 📝 [**Paper (Preview PDF)**](../../assets/Search2Skill-20260804-v1-arxiv.pdf)
-
 </div>
-
----
-
-> [!IMPORTANT]
-> **🚧 Code will be released.** This repository is a placeholder for the official implementation of Search2Skill. Star or watch the repo to get notified.
 
 ---
 
@@ -41,8 +34,8 @@ Crucially, the agent must jointly learn **when to search**, **how to search**, a
 
 ## 🔥 News
 
-* [2026/08] 🎉 Paper preview (PDF) released — see [Search2Skill-20260804-v1-arxiv.pdf](../../assets/Search2Skill-20260804-v1-arxiv.pdf). Code coming soon.
-* [2026/08] Project page is up. Paper and code coming soon.
+* **[2026-11-14]** Released the inference and evaluation code, configuration templates, and the veRL-based Rubric GRPO training code. See [USAGE.md](USAGE.md) to get started. Datasets are not bundled with this code release.
+* **[2026-08]** Released the [paper](https://arxiv.org/abs/2608.05245) and project overview.
 
 ---
 
@@ -123,26 +116,75 @@ Even with the library frozen and web access removed, the distilled skills carry 
 
 ---
 
+## 💻 Code
+
+The inference and evaluation code is included in this repository. See **[USAGE.md](USAGE.md)** for detailed setup instructions, including:
+
+- Environment setup and dependency installation
+- API configuration (LLM, web search, embedding)
+- Running evaluations in all modes (streaming & held-out)
+- Dataset descriptions and output formats
+
+### Project Structure
+
+```
+Search2Skill/
+├── assets/                     # Method figures and evaluation results
+├── config/config.yaml          # Configuration (fill in your API keys)
+├── scripts/
+│   ├── eval_benchmark.py       # Single-dataset evaluation (multiple modes)
+│   ├── eval_pipeline.py        # Two-phase pipeline: train skills → test
+│   ├── exp1_knowledge_gap.py   # Knowledge Gap Self-Awareness experiment
+│   ├── run_all_eval.sh         # Run eval across all datasets
+│   └── run_pipeline_eval.sh    # Run pipeline across datasets
+├── llm/                        # LLM clients (OpenAI-compatible, Claude)
+├── core/                       # Agent, skill manager, decision logic
+├── evaluation/                 # Judges, embedding retriever, usage tracker
+├── tools/                      # Web search, web visit, code executor
+├── benchmarks/                 # Benchmark loaders
+└── verl/                       # RL training (Rubric GRPO, built on veRL)
+```
+
+### Quick Start
+
+Run the following from the root of Marco-DeepResearch. Prepare your evaluation data at `data/mmlu_pro_law/law_test.json` first; datasets are not included in the repository. See [data preparation](USAGE.md#datasets) for the expected paths and format.
+
+```bash
+cd Marco-DeepResearch-Family/Search2Skill
+pip install -r requirements.txt
+# Edit config/config.yaml with your API keys
+python scripts/eval_benchmark.py \
+    --benchmark mmlu_pro_law \
+    --data_file data/mmlu_pro_law/law_test.json \
+    --mode search_skill \
+    --model agent-llm \
+    --num 10
+```
+
+For full details, see **[USAGE.md](USAGE.md)**.
+
+The inference and evaluation entry points use the dependencies above. The bundled `verl/` training code has additional dependencies and requires a compatible accelerator environment; see [verl/requirements.txt](verl/requirements.txt) and [verl/pyproject.toml](verl/pyproject.toml). Use Python 3.12 for the bundled training code.
+
+---
+
 ## 🛡️ License
 
-This project is licensed under the **Apache-2.0 License**. See [LICENSE](../../LICENSE) for details.
+This project is licensed under **Apache-2.0**.
 
 ---
 
 ## 📖 Citation
 
-If you find Search2Skill useful in your research, please cite (entry will be updated once the paper is public):
+If you find Search2Skill useful in your research, please cite:
 
 ```bibtex
-@misc{ye2026search2skillskilldistillationknowledge,
-      title={Search2Skill: Skill Distillation Beyond Knowledge Boundaries Via Rubric-Based Reinforcement Learning}, 
+@misc{ye2026search2skill,
+      title={Search2Skill: Skill Distillation Beyond Knowledge Boundaries via Rubric-Based Reinforcement Learning},
       author={Muyang Ye and Tian Lan and Feihu Jiang and Yongshi Ye and Wuyunsiqin and Bin Zhu and Qianghuai Jia and Zhao Xu and Weihua Luo and Ye Wang and Jinyang Zhang and Longyue Wang and Lingfeng Bao},
       year={2026},
       eprint={2608.05245},
       archivePrefix={arXiv},
       primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2608.05245}, 
+      url={https://arxiv.org/abs/2608.05245},
 }
 ```
-
----

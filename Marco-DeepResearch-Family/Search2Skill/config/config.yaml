@@ -1,0 +1,144 @@
+# ============================================================
+#  Search2Skill — Main Configuration
+# ============================================================
+#  Fill in the <YOUR_...> placeholders before running.
+#  See README.md for detailed setup instructions.
+# ============================================================
+
+llm:
+  default: "agent-llm"            # profile used for the main agent loop
+  profiles:
+    # --- Local vLLM deployment example ---
+    qwen3-8b-local:
+      backend: "vllm"
+      model_path: "<YOUR_MODEL_PATH>"
+      port: 8002
+      gpu_memory_utilization: 0.9
+      tensor_parallel_size: 1
+      enable_thinking: true
+      max_tokens: null
+      timeout: 300.0
+      max_retries: 5
+
+    # --- Remote API example (DashScope / OpenAI-compatible) ---
+    agent-llm:
+      model: "qwen3-32b"                         # model id
+      api_base: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+      api_key: "<YOUR_API_KEY>"
+      enable_thinking: true
+      max_tokens: null
+      timeout: 300.0
+      max_retries: 5
+
+    # Lightweight LLM for page-content compression
+    compress-llm:
+      api_base: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+      model: "qwen3-32b"
+      api_key: "<YOUR_API_KEY>"
+      temperature: 0.3
+      max_tokens: null
+      timeout: 300.0
+      max_retries: 6
+
+    # LLM for skill relevance filtering
+    filter-llm:
+      api_base: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+      model: "qwen3-32b"
+      api_key: "<YOUR_API_KEY>"
+      temperature: 0.3
+      max_tokens: null
+      timeout: 300.0
+      max_retries: 6
+
+    # LLM for answer judging / reward computation
+    judge-llm:
+      api_base: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+      model: "qwen3-32b"
+      api_key: "<YOUR_API_KEY>"
+      temperature: 0.3
+      max_tokens: null
+      timeout: 300.0
+      max_retries: 6
+
+# ======================== Web Search ========================
+web_search:
+  engine: "tavily"               # tavily / duckduckgo / google
+  tavily_api_key: "<YOUR_TAVILY_API_KEY>"   # get one at https://tavily.com
+  max_results: 5
+  max_content_length: 3000
+  search_depth: "advanced"
+  # --- Google proxy (optional, only needed if engine=google) ---
+  google_authorization: "<YOUR_GOOGLE_AUTH>"
+  google_job_name: "default"
+  google_backend: "proxy"
+  google_enable_cache: true
+  fetch_workers: 4
+  blocked_domains:
+    - "huggingface.co"
+    - "hf-mirror.com"
+    - "chegg.com"
+    - "coursehero.com"
+    - "bartleby.com"
+    - "studocu.com"
+    - "quizlet.com"
+    - "brainly.com"
+    - "github.com"
+    - "kaggle.com"
+
+# ======================== Web Visit ========================
+web_visit:
+  compress_llm: "compress-llm"
+  fetch_mode: "jina"             # proxy / requests / jina
+  fetch_timeout: 10
+  fetch_max_retries: 5
+  max_content_length: 200000
+  max_compress_context_tokens: 28000
+
+# ======================== Skill Library ========================
+skill:
+  library_path: "skills/skill_library.json"
+  max_skills: 3000
+  similarity_threshold: 0.40
+  skill_top_k: 7
+  retrieval: "embedding"         # "embedding" or "fuzzy"
+  filter_llm: "filter-llm"
+
+# ======================== Code Executor ========================
+code_executor:
+  timeout: 30
+  max_memory_mb: 512
+
+# ======================== Evaluation ========================
+evaluation:
+  method: "exact_and_fuzzy"
+  fuzzy_threshold: 0.8
+
+# ======================== Agent ========================
+agent:
+  max_rounds: 15
+  explore_max_searches: 3
+  explore_max_total_searches: 5
+  explore_max_page_visits: 5
+
+# ======================== RL (optional) ========================
+rl:
+  reward_judge_profile: "judge-llm"
+  similarity_judge_profile: "judge-llm"
+  reward_judge_primary_profile: "compress-llm"
+  reward_judge_secondary_profile: "judge-llm"
+
+# ======================== Embedding ========================
+embedding:
+  api_base: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  api_key: "<YOUR_EMBEDDING_API_KEY>"
+  model: "text-embedding-v4"
+  dimensions: 1024
+  batch_size: 10
+  alpha: 0.7
+
+# ======================== Benchmark ========================
+benchmark:
+  name: "mmlu_pro"
+  subset: null
+  num_samples: 100
+  data_dir: "data/"

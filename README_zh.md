@@ -51,6 +51,7 @@
 
 ## 🔥 新闻与更新
 
+* **[2026-11-14]** 🎉 开源 **[Search2Skill 代码](Marco-DeepResearch-Family/Search2Skill/README.md)**，包含推理与评测、配置模板，以及基于 veRL 的 Rubric GRPO 训练代码。环境配置和评测方法见 **[使用指南](Marco-DeepResearch-Family/Search2Skill/USAGE.md)**。
 * **[2026-08]** 🎉 开源 **[UMEM](Marco-DeepResearch-Family/UMEM/README.md)** 训练与推理代码
 * **[2026-08]** 🎉 发布 **[Search2Skill](Marco-DeepResearch-Family/Search2Skill/README.md)** 论文预印本 — 一个基于 Rubric 强化学习训练的搜索驱动自进化技能框架
 * **[2026-02]** 🎉 发布 **UMEM（统一记忆提取与管理）** - 一个联合优化提取和管理以实现可泛化智能体记忆的自进化记忆框架。
@@ -164,6 +165,10 @@ Marco-DeepResearch/
 │   │   └── README.md
 │   ├── Search2Skill/            # 搜索驱动的自进化技能框架
 │   │   ├── assets/               # 图表与实验结果
+│   │   ├── core/                 # Agent 循环与持久化技能库
+│   │   ├── scripts/              # 推理与评测入口
+│   │   ├── verl/                 # Rubric GRPO 训练代码
+│   │   ├── USAGE.md              # 环境配置与评测指南
 │   │   └── README.md
 │   ├── README.md                # 系列概览（英文）
 │   └── README_zh.md             # 系列概览（中文）
@@ -192,7 +197,13 @@ pip install -r requirements.txt
 cd Marco-DeepResearch-Family/UMEM
 pip install -r requirements.txt
 pip install -e .
+
+# Search2Skill（从仓库根目录执行）
+cd Marco-DeepResearch-Family/Search2Skill
+pip install -r requirements.txt
 ```
+
+Search2Skill 的代码发布不包含数据集。数据准备、API 配置和独立训练环境的说明见[使用指南](Marco-DeepResearch-Family/Search2Skill/USAGE.md)。
 
 ### 运行评估
 
@@ -228,6 +239,7 @@ bash umem_scripts/run_eval.sh
 - [DeepWideSearch README](Marco-DeepResearch-Family/DeepWideSearch/README.md) - 深广搜索评估
 - [Table-as-Search README](Marco-DeepResearch-Family/Table-as-Search/README.md) - 框架使用和部署
 - [UMEM README](Marco-DeepResearch-Family/UMEM/README.md) - 记忆系统训练和评估
+- [Search2Skill 使用指南](Marco-DeepResearch-Family/Search2Skill/USAGE.md) - 搜索驱动的技能推理、流式评测与留出集评测
 
 ---
 

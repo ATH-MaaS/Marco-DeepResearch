@@ -16,7 +16,7 @@ The **Marco DeepResearch Family** encompasses a comprehensive suite of benchmark
 
 ---
 
-## 📑 [HSCodeComp](../HSCodeComp/README.md)
+## 📑 [HSCodeComp](HSCodeComp/README.md)
 
 **Evaluating Hierarchical Rule Application in E-Commerce Domain**
 
@@ -46,7 +46,7 @@ Reveals critical limitations in agents' ability to handle hierarchical reasoning
 
 ---
 
-## 🌐 [DeepWideSearch](../DeepWideSearch/README.md)
+## 🌐 [DeepWideSearch](DeepWideSearch/README.md)
 
 **Evaluating Deep-and-Wide Agentic Information Seeking**
 
@@ -77,7 +77,7 @@ Demonstrates that even state-of-the-art agents struggle with combining wide expl
 
 ---
 
-## 📊 [Table-as-Search](../Table-as-Search/README.md)
+## 📊 [Table-as-Search](Table-as-Search/README.md)
 
 **Hierarchical Multi-Agent Framework for Deep and Wide Information Seeking**
 
@@ -131,7 +131,7 @@ Hierarchical multi-agent architecture with specialized search strategies that si
 
 ---
 
-## 🧠 [UMEM](../UMEM/README.md)
+## 🧠 [UMEM](UMEM/README.md)
 
 **Unified Memory Extraction and Management for Generalizable Self-Evolving Memory**
 
@@ -182,7 +182,7 @@ Build self-evolving agent memory systems that avoid the **"Rote Memorization" tr
 
 ---
 
-## 🧬 [Search2Skill](../Search2Skill/README.md)
+## 🧬 [Search2Skill](Search2Skill/README.md)
 
 **Skill Distillation Beyond Knowledge Boundaries via Rubric-Based Reinforcement Learning**
 
@@ -212,7 +212,7 @@ A **search-driven, self-evolving skill framework** that closes the loop of **cap
 
 ### Resources
 
-- 📝 [Paper (Preview PDF)](../assets/Search2Skill-20260804-v1-arxiv.pdf) | 🔧 Code (Coming Soon) | 📘 [Documentation](Search2Skill/README.md)
+- 📝 [Paper](https://arxiv.org/abs/2608.05245) | 🔧 [Code](Search2Skill/) | 📘 [Usage guide](Search2Skill/USAGE.md)
 
 ---
 
@@ -226,7 +226,7 @@ A **search-driven, self-evolving skill framework** that closes the loop of **cap
 | **DeepWideSearch** | [🤗 Dataset](https://huggingface.co/datasets/AIDC-AI/DeepWideSearch) | [📁 Data](DeepWideSearch/data/) | [📝 arXiv](https://arxiv.org/abs/2510.20168) |
 | **Table-as-Search** | — | [📁 Code](Table-as-Search/) | [📝 arXiv](https://arxiv.org/abs/2602.06724) |
 | **UMEM** | Coming Soon | [📁 Code](UMEM/) | Coming Soon |
-| **Search2Skill** | — | [📁 Code (Coming Soon)](Search2Skill/) | [📝 Preview PDF](../assets/Search2Skill-20260804-v1-arxiv.pdf) |
+| **Search2Skill** | — | [📁 Code](Search2Skill/) | [📝 arXiv](https://arxiv.org/abs/2608.05245) |
 
 ### Benchmark Adoption
 

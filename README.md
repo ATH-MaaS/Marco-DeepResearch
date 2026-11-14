@@ -51,6 +51,7 @@ These benchmarks and frameworks reveal and address fundamental gaps in current A
 
 ## 🔥 News & Updates
 
+* **[2026-11-14]** 🎉 Released the **[Search2Skill codebase](Marco-DeepResearch-Family/Search2Skill/README.md)**, including inference and evaluation, configuration templates, and veRL-based Rubric GRPO training code. See the **[usage guide](Marco-DeepResearch-Family/Search2Skill/USAGE.md)** for setup and evaluation.
 * **[2026-09]** 🎉 Released **[CHIME](https://arxiv.org/abs/2609.02074)** - a self-evolving memory framework that maintains a separate planning bank and execution bank and follows an attribute-before-memorize principle.
 * **[2026-08]** 🎉 Open-sourced the **[UMEM](Marco-DeepResearch-Family/UMEM/README.md)** training and inference codebase
 * **[2026-08]** 🎉 Release **[Search2Skill](Marco-DeepResearch-Family/Search2Skill/README.md)** paper preview — a search-driven, self-evolving skill framework trained with rubric-based RL
@@ -171,6 +172,10 @@ Marco-DeepResearch/
 │   │   └── README.md
 │   ├── Search2Skill/            # Search-driven self-evolving skill framework
 │   │   ├── assets/               # Figures and results
+│   │   ├── core/                 # Agent loop and persistent skill library
+│   │   ├── scripts/              # Inference and evaluation entry points
+│   │   ├── verl/                 # Rubric GRPO training code
+│   │   ├── USAGE.md              # Setup and evaluation guide
 │   │   └── README.md
 │   ├── README.md                # Family overview (English)
 │   └── README_zh.md             # Family overview (Chinese)
@@ -199,7 +204,13 @@ pip install -r requirements.txt
 cd Marco-DeepResearch-Family/UMEM
 pip install -r requirements.txt
 pip install -e .
+
+# For Search2Skill (from the repository root)
+cd Marco-DeepResearch-Family/Search2Skill
+pip install -r requirements.txt
 ```
+
+Search2Skill datasets are not bundled with the code release. See its [usage guide](Marco-DeepResearch-Family/Search2Skill/USAGE.md) for data preparation, API configuration, and the separate training environment.
 
 ### Running Evaluations
 
@@ -235,6 +246,7 @@ For detailed setup and usage instructions, please refer to:
 - [DeepWideSearch README](Marco-DeepResearch-Family/DeepWideSearch/README.md) - Deep-wide search evaluation
 - [Table-as-Search README](Marco-DeepResearch-Family/Table-as-Search/README.md) - Framework usage and deployment
 - [UMEM README](Marco-DeepResearch-Family/UMEM/README.md) - Memory system training and evaluation
+- [Search2Skill usage guide](Marco-DeepResearch-Family/Search2Skill/USAGE.md) - Search-driven skill inference, streaming and held-out evaluation
 
 ---
 
